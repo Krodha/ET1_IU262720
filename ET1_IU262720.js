@@ -1,11 +1,11 @@
 let datosgenerales =
 {
     Lider:
-        ["CrucesFernandezLucas", "Entrega", 0],
+        ["CrucesFernandezLucas", "Entrega", 3],
     Participante1:
-        ["LimaGandaraMartin", "Entrega", 0],
+        ["LimaGandaraMartin", "Entrega", 3],
     Participante2:
-        ["DizParrondoRoberto", "Entrega", 0],
+        ["DizParrondoRoberto", "Entrega", 3],
     Participante3:
-        ["ElsdekyMahmoudKhaled", "Entrega", 0]
+        ["ElsdekyMahmoudKhaled", "Entrega", 3]
 }
