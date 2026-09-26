@@ -57,101 +57,87 @@ Array(
 
 
     //fechaNacimiento_persona --> ADD
-    Array('persona','fechaNacimiento_persona','input',40,'cumple tamaño minimo','min_size','ADD','fechaNacimiento_min_size_ko','Tamaño muy corto. Debe tener 8 números y dos barras (Formato dd/mm/aaaa)'),
-    Array('persona','fechaNacimiento_persona','input',41,'cumple tamaño maximo','max_size','ADD','fechaNacimiento_max_size_ko','Tamaño muy grande. Debe tener 8 números y dos barras (Formato dd/mm/aaaa)'),
-    Array('persona','fechaNacimiento_persona','input',42,'cumple formato','format','ADD','fechaNacimiento_format_ko','Formato inválido. Debe tener 8 números y dos barras (Formato dd/mm/aaaa)'),
+    Array('persona','fechaNacimiento_persona','input',40,'cumple formato','format','ADD','fechaNacimiento_format_ko','Formato inválido. Debe seguir el formato Formato dd/mm/aaaa'),
+    Array('persona','fechaNacimiento_persona','input',41,'cumple día válido','personalized','ADD','fechaNacimiento_dia_incorrecto','Fecha inválida. El día no puede ser 0 ni mayor que 28,29,30 o 31 (dependiendo del mes y año)'),
+    Array('persona','fechaNacimiento_persona','input',42,'cumple mes válido','personalized','ADD','fechaNacimiento_mes_incorrectos','Fecha inválida. El mes no puede ser 0 ni mayor que 12'),
     Array('persona','fechaNacimiento_persona','input',43,'cumple fecha no futura','personalized','ADD','fechaNacimiento_futura','Fecha inválida. No debe ser una fecha futura'),
-    Array('persona','fechaNacimiento_persona','input',44,'cumple fecha no futura','personalized','ADD','fechaNacimiento_dia_incorrecto','Fecha inválida. El día no puede ser mayor que 28,29,30 o 31 (dependiendo del mes y año)'),
-    Array('persona','fechaNacimiento_persona','input',45,'cumple fecha no futura','personalized','ADD','fechaNacimiento_mes_incorrectos','Fecha inválida. El mes no puede ser mayor que 12'),
-    Array('persona','fechaNacimiento_persona','input',46,'es correcto','valid','ADD',true,'Fecha nacimiento persona correcta'),
+    Array('persona','fechaNacimiento_persona','input',44,'es correcta','valid','ADD',true,'Fecha nacimiento persona correcta'),
     //fechaNacimiento --> EDIT
-    Array('persona','fechaNacimiento_persona','input',47,'cumple tamaño minimo','min_size','EDIT','fechaNacimiento_min_size_ko','Tamaño muy corto. Debe tener 8 números y dos barras (Formato dd/mm/aaaa)'),
-    Array('persona','fechaNacimiento_persona','input',48,'cumple tamaño maximo','max_size','EDIT','fechaNacimiento_max_size_ko','Tamaño muy grande. Debe tener 8 números y dos barras (Formato dd/mm/aaaa)'),
-    Array('persona','fechaNacimiento_persona','input',49,'cumple formato','format','EDIT','fechaNacimiento_format_ko','Formato inválido. Debe tener 8 números y dos barras (Formato dd/mm/aaaa)'),
-    Array('persona','fechaNacimiento_persona','input',50,'cumple fecha no futura','personalized','EDIT','fechaNacimiento_futura','Fecha inválida. No debe ser una fecha futura'),
-    Array('persona','fechaNacimiento_persona','input',51,'cumple fecha no futura','personalized','EDIT','fechaNacimiento_dia_incorrecto','Fecha inválida. El día no puede ser mayor que 28,29,30 o 31 (dependiendo del mes y año)'),
-    Array('persona','fechaNacimiento_persona','input',52,'cumple fecha no futura','personalized','EDIT','fechaNacimiento_mes_incorrectos','Fecha inválida. El mes no puede ser mayor que 12'),
-    Array('persona','fechaNacimiento_persona','input',53,'es correcto','valid','EDIT',true,'Fecha Nacimiento persona correcta'), 
+    Array('persona','fechaNacimiento_persona','input',45,'cumple formato','format','EDIT','fechaNacimiento_format_ko','Formato inválido. Debe seguir el formato Formato dd/mm/aaaa'),
+    Array('persona','fechaNacimiento_persona','input',46,'cumple día válido','personalized','EDIT','fechaNacimiento_dia_incorrecto','Fecha inválida. El día no puede ser 0 ni mayor que 28,29,30 o 31 (dependiendo del mes y año)'),
+    Array('persona','fechaNacimiento_persona','input',47,'cumple mes válido','personalized','EDIT','fechaNacimiento_mes_incorrectos','Fecha inválida. El mes no puede ser 0 ni mayor que 12'),
+    Array('persona','fechaNacimiento_persona','input',48,'cumple fecha no futura','personalized','EDIT','fechaNacimiento_futura','Fecha inválida. No debe ser una fecha futura'),
+    Array('persona','fechaNacimiento_persona','input',49,'es correcta','valid','EDIT',true,'Fecha Nacimiento persona correcta'), 
     //fechaNacimiento --> SEARCH
-    Array('persona','fechaNacimiento_persona','input',54,'cumple tamaño minimo','min_size','SEARCH','fechaNacimiento_min_size_ko','Tamaño muy corto. Debe tener 8 números y dos barras (Formato dd/mm/aaaa)'),
-    Array('persona','fechaNacimiento_persona','input',55,'cumple tamaño maximo','max_size','SEARCH','fechaNacimiento_max_size_ko','Tamaño muy grande. Debe tener 8 números y dos barras (Formato dd/mm/aaaa)'),
-    Array('persona','fechaNacimiento_persona','input',56,'cumple formato','format','SEARCH','fechaNacimiento_format_ko','Formato inválido. Debe tener 8 números y dos barras (Formato dd/mm/aaaa)'),
-    Array('persona','fechaNacimiento_persona','input',57,'cumple fecha no futura','personalized','SEARCH','fechaNacimiento_futura','Fecha inválida. No debe ser una fecha futura'),
-    Array('persona','fechaNacimiento_persona','input',58,'cumple fecha no futura','personalized','SEARCH','fechaNacimiento_dia_incorrecto','Fecha inválida. El día no puede ser mayor que 28,29,30 o 31 (dependiendo del mes y año)'),
-    Array('persona','fechaNacimiento_persona','input',59,'cumple fecha no futura','personalized','SEARCH','fechaNacimiento_mes_incorrectos','Fecha inválida. El mes no puede ser mayor que 12'),
-    Array('persona','fechaNacimiento_persona','input',60,'es correcto','valid','SEARCH',true,'Fecha Nacimiento persona correcta'), 
+    Array('persona','fechaNacimiento_persona','input',50,'cumple formato','format','SEARCH','fechaNacimiento_format_ko','Formato inválido. Debe seguir el formato Formato dd/mm/aaaa'),
+    Array('persona','fechaNacimiento_persona','input',51,'cumple día válido','personalized','SEARCH','fechaNacimiento_dia_incorrecto','Fecha inválida. El día no puede ser 0 ni mayor que 28,29,30 o 31 (dependiendo del mes y año)'),
+    Array('persona','fechaNacimiento_persona','input',52,'cumple mes válido','personalized','SEARCH','fechaNacimiento_mes_incorrectos','Fecha inválida. El mes no puede ser 0 ni mayor que 12'),
+    Array('persona','fechaNacimiento_persona','input',53,'cumple fecha no futura','personalized','SEARCH','fechaNacimiento_futura','Fecha inválida. No debe ser una fecha futura'),
+    Array('persona','fechaNacimiento_persona','input',54,'es correcta','valid','SEARCH',true,'Fecha Nacimiento persona correcta'), 
 
 
     //direccion_persona --> ADD
-    Array('persona','direccion_persona','input',61,'cumple tamaño minimo','min_size','ADD','direccion_min_size_ko','Tamaño muy corto. Debe estar entre 10 y 200 caracteres'),
-    Array('persona','direccion_persona','input',62,'cumple tamaño maximo','max_size','ADD','direccion_max_size_ko','Tamaño muy grande. Debe estar entre 10 y 200 caracteres'),
-    Array('persona','direccion_persona','input',63,'cumple formato','format','ADD','direccion_format_ko','Formato inválido. Debe contener caracteres alfanuméricos (incluidos ñ,á,Á,é,É,í,Í,ó,Ó,ú,Ú,ü,Ü) y solo se permiten los signos punto (.), punto y coma (;), barra (/) y guión (-)'),
-    Array('persona','direccion_persona','input',64,'es correcto','valid','ADD',true,'Direccion persona correcta'),
+    Array('persona','direccion_persona','input',55,'cumple tamaño minimo','min_size','ADD','direccion_min_size_ko','Tamaño muy corto. Debe estar entre 10 y 200 caracteres'),
+    Array('persona','direccion_persona','input',56,'cumple tamaño maximo','max_size','ADD','direccion_max_size_ko','Tamaño muy grande. Debe estar entre 10 y 200 caracteres'),
+    Array('persona','direccion_persona','input',57,'cumple formato','format','ADD','direccion_format_ko','Formato inválido. Debe contener caracteres alfanuméricos (incluidos ñ,á,Á,é,É,í,Í,ó,Ó,ú,Ú,ü,Ü) y solo se permiten los signos punto (.), punto y coma (;), barra (/) y guión (-)'),
+    Array('persona','direccion_persona','input',58,'es correcto','valid','ADD',true,'Direccion persona correcta'),
     //direccion_persona --> EDIT
-    Array('persona','direccion_persona','input',65,'cumple tamaño minimo','min_size','EDIT','direccion_min_size_ko','Tamaño muy corto. Debe estar entre 3 y 100 caracteres'),
-    Array('persona','direccion_persona','input',66,'cumple tamaño maximo','max_size','EDIT','direccion_max_size_ko','Tamaño muy grande. Debe estar entre 3 y 100 caracteres'),
-    Array('persona','direccion_persona','input',67,'cumple formato','format','EDIT','direccion_format_ko','Formato inválido. Debe contener caracteres alfanuméricos (incluidos ñ,á,Á,é,É,í,Í,ó,Ó,ú,Ú,ü,Ü) y solo se permiten los signos punto (.), punto y coma (;), barra (/) y guión (-)'),
-    Array('persona','direccion_persona','input',68,'es correcto','valid','EDIT',true,'Direccion persona correcta'),
+    Array('persona','direccion_persona','input',59,'cumple tamaño minimo','min_size','EDIT','direccion_min_size_ko','Tamaño muy corto. Debe estar entre 3 y 100 caracteres'),
+    Array('persona','direccion_persona','input',60,'cumple tamaño maximo','max_size','EDIT','direccion_max_size_ko','Tamaño muy grande. Debe estar entre 3 y 100 caracteres'),
+    Array('persona','direccion_persona','input',61,'cumple formato','format','EDIT','direccion_format_ko','Formato inválido. Debe contener caracteres alfanuméricos (incluidos ñ,á,Á,é,É,í,Í,ó,Ó,ú,Ú,ü,Ü) y solo se permiten los signos punto (.), punto y coma (;), barra (/) y guión (-)'),
+    Array('persona','direccion_persona','input',62,'es correcto','valid','EDIT',true,'Direccion persona correcta'),
     //direccion_persona --> SEARCH
-    Array('persona','direccion_persona','input',69,'cumple tamaño minimo','min_size','SEARCH','direccion_min_size_ko','Tamaño muy corto. Debe estar entre 3 y 100 caracteres'),
-    Array('persona','direccion_persona','input',70,'cumple tamaño maximo','max_size','SEARCH','direccion_max_size_ko','Tamaño muy grande. Debe estar entre 3 y 100 caracteres'),
-    Array('persona','direccion_persona','input',71,'cumple formato','format','SEARCH','direccion_format_ko','Formato inválido. Debe contener caracteres alfanuméricos (incluidos ñ,á,Á,é,É,í,Í,ó,Ó,ú,Ú,ü,Ü) y solo se permiten los signos punto (.), punto y coma (;), barra (/) y guión (-)'),
-    Array('persona','direccion_persona','input',72,'es correcto','valid','SEARCH',true,'Direccion persona correcta'),
+    Array('persona','direccion_persona','input',63,'cumple tamaño minimo','min_size','SEARCH','direccion_min_size_ko','Tamaño muy corto. Debe estar entre 3 y 100 caracteres'),
+    Array('persona','direccion_persona','input',64,'cumple tamaño maximo','max_size','SEARCH','direccion_max_size_ko','Tamaño muy grande. Debe estar entre 3 y 100 caracteres'),
+    Array('persona','direccion_persona','input',65,'cumple formato','format','SEARCH','direccion_format_ko','Formato inválido. Debe contener caracteres alfanuméricos (incluidos ñ,á,Á,é,É,í,Í,ó,Ó,ú,Ú,ü,Ü) y solo se permiten los signos punto (.), punto y coma (;), barra (/) y guión (-)'),
+    Array('persona','direccion_persona','input',66,'es correcto','valid','SEARCH',true,'Direccion persona correcta'),
 
 
     //telefono_persona --> ADD
-    Array('persona','telefono_persona','input',73,'cumple tamaño minimo','min_size','ADD','telefono_min_size_ko','Tamaño muy corto. Debe tener exactamente 9 números'),
-    Array('persona','telefono_persona','input',74,'cumple tamaño maximo','max_size','ADD','telefono_max_size_ko','Tamaño muy grande. Debe tener exactamente 9 números'),
-    Array('persona','telefono_persona','input',75,'cumple formato','format','ADD','telefono_format_ko','Formato inválido. Debe tener exactamente 9 números'),
-    Array('persona','telefono_persona','input',76,'es correcto','valid','ADD',true,'telefono persona correcto'),
+    Array('persona','telefono_persona','input',67,'cumple tamaño minimo','min_size','ADD','telefono_min_size_ko','Tamaño muy corto. Debe tener exactamente 9 números'),
+    Array('persona','telefono_persona','input',68,'cumple tamaño maximo','max_size','ADD','telefono_max_size_ko','Tamaño muy grande. Debe tener exactamente 9 números'),
+    Array('persona','telefono_persona','input',69,'cumple formato','format','ADD','telefono_format_ko','Formato inválido. Debe tener exactamente 9 números'),
+    Array('persona','telefono_persona','input',70,'es correcto','valid','ADD',true,'telefono persona correcto'),
     //telefono --> EDIT
-    Array('persona','telefono_persona','input',77,'cumple tamaño minimo','min_size','EDIT','telefono_min_size_ko','Tamaño muy corto. Debe tener exactamente 9 números'),
-    Array('persona','telefono_persona','input',78,'cumple tamaño maximo','max_size','EDIT','telefono_max_size_ko','Tamaño muy grande. Debe tener exactamente 9 números'),
-    Array('persona','telefono_persona','input',79,'cumple formato','format','EDIT','telefono_format_ko','Formato inválido. Debe tener exactamente 9 números'),
-    Array('persona','telefono_persona','input',80,'es correcto','valid','EDIT',true,'telefono persona correcto'), 
+    Array('persona','telefono_persona','input',71,'cumple tamaño minimo','min_size','EDIT','telefono_min_size_ko','Tamaño muy corto. Debe tener exactamente 9 números'),
+    Array('persona','telefono_persona','input',72,'cumple tamaño maximo','max_size','EDIT','telefono_max_size_ko','Tamaño muy grande. Debe tener exactamente 9 números'),
+    Array('persona','telefono_persona','input',73,'cumple formato','format','EDIT','telefono_format_ko','Formato inválido. Debe tener exactamente 9 números'),
+    Array('persona','telefono_persona','input',74,'es correcto','valid','EDIT',true,'telefono persona correcto'), 
     //telefono --> SEARCH
-    Array('persona','telefono_persona','input',81,'cumple tamaño minimo','min_size','SEARCH','telefono_min_size_ko','Tamaño muy corto. Debe tener exactamente 9 números'),
-    Array('persona','telefono_persona','input',82,'cumple tamaño maximo','max_size','SEARCH','telefono_max_size_ko','Tamaño muy grande. Debe tener exactamente 9 números'),
-    Array('persona','telefono_persona','input',83,'cumple formato','format','SEARCH','telefono_format_ko','Formato inválido. Debe tener exactamente 9 números'),
-    Array('persona','telefono_persona','input',84,'es correcto','valid','SEARCH',true,'telefono persona correcto'),
+    Array('persona','telefono_persona','input',75,'cumple tamaño minimo','min_size','SEARCH','telefono_min_size_ko','Tamaño muy corto. Debe tener exactamente 9 números'),
+    Array('persona','telefono_persona','input',76,'cumple tamaño maximo','max_size','SEARCH','telefono_max_size_ko','Tamaño muy grande. Debe tener exactamente 9 números'),
+    Array('persona','telefono_persona','input',77,'cumple formato','format','SEARCH','telefono_format_ko','Formato inválido. Debe tener exactamente 9 números'),
+    Array('persona','telefono_persona','input',78,'es correcto','valid','SEARCH',true,'telefono persona correcto'),
 
 
     //email_persona --> ADD
-    Array('persona','email_persona','input',85,'cumple tamaño maximo','max_size','ADD','email_max_size_ko','Tamaño muy grande. Debe tener menos de 45 caracteres'),
-    Array('persona','email_persona','input',86,'cumple formato','format','ADD','email_format_ko','Formato inválido. Debe ser usuario67@dominio.tld'),
-    Array('persona','email_persona','input',87,'es correcto','valid','ADD',true,'email persona correcto'),
+    Array('persona','email_persona','input',79,'cumple tamaño maximo','max_size','ADD','email_max_size_ko','Tamaño muy grande. Debe tener menos de 45 caracteres'),
+    Array('persona','email_persona','input',80,'cumple formato','format','ADD','email_format_ko','Formato inválido. Debe ser usuario67@dominio.tld'),
+    Array('persona','email_persona','input',81,'es correcto','valid','ADD',true,'email persona correcto'),
     //email --> EDIT
-    Array('persona','email_persona','input',88,'cumple tamaño maximo','max_size','EDIT','email_max_size_ko','Tamaño muy grande. Debe tener menos de 45 caracteres'),
-    Array('persona','email_persona','input',89,'cumple formato','format','EDIT','email_format_ko','Formato inválido. Debe ser usuario67@dominio.tld'),
-    Array('persona','email_persona','input',90,'es correcto','valid','EDIT',true,'email persona correcto'), 
+    Array('persona','email_persona','input',82,'cumple tamaño maximo','max_size','EDIT','email_max_size_ko','Tamaño muy grande. Debe tener menos de 45 caracteres'),
+    Array('persona','email_persona','input',83,'cumple formato','format','EDIT','email_format_ko','Formato inválido. Debe ser usuario67@dominio.tld'),
+    Array('persona','email_persona','input',84,'es correcto','valid','EDIT',true,'email persona correcto'), 
     //email --> SEARCH
-    Array('persona','email_persona','input',91,'cumple tamaño maximo','max_size','SEARCH','email_max_size_ko','Tamaño muy grande. Debe tener menos de 45 caracteres'),
-    Array('persona','email_persona','input',92,'cumple formato','format','SEARCH','email_format_ko','Formato inválido. Debe ser usuario67@dominio.tld'),
-    Array('persona','email_persona','input',93,'es correcto','valid','SEARCH',true,'email persona correcto'), 
+    Array('persona','email_persona','input',85,'cumple tamaño maximo','max_size','SEARCH','email_max_size_ko','Tamaño muy grande. Debe tener menos de 45 caracteres'),
+    Array('persona','email_persona','input',86,'cumple formato','format','SEARCH','email_format_ko','Formato inválido. Debe ser usuario67@dominio.tld'),
+    Array('persona','email_persona','input',87,'es correcto','valid','SEARCH',true,'email persona correcto'), 
 
 
-    //foto_persona --> ADD
-    Array('persona','foto_persona','file',94,'cumple tamaño minimo','min_size','ADD','foto_persona_min_size_ko','Nombre demasiado corto. Debe ser mayor de 3 caracteres.'),
-    Array('persona','foto_persona','file',95,'cumple tamaño maximo','max_size','ADD','foto_persona_max_ko','Nombre demaisado largo. debe ser menor de 15 caracteres.'),
-    Array('persona','foto_persona','file',96,'formato','format','ADD','foto_persona_format_ko','Formato incorrecto. Solo se admiten letras y punto (.)'),
-    //foto_persona --> EDIT
-    Array('persona','foto_persona','file',97,'cumple tamaño minimo','min_size','EDIT','foto_persona_min_size_ko','Nombre demasiado corto. Debe ser mayor de 3 caracteres.'),
-    Array('persona','foto_persona','file',98,'cumple tamaño maximo','max_size','EDIT','foto_persona_max_ko','Nombre demaisado largo. debe ser menor de 15 caracteres.'),
-    Array('persona','foto_persona','file',99,'formato','format','EDIT','foto_persona_format_ko','Formato incorrecto. Solo se admiten letras y punto (.)'),
     //foto_persona --> SEARCH
-    Array('persona','foto_persona','file',100,'cumple tamaño minimo','min_size','SEARCH','foto_persona_min_size_ko','Nombre demasiado corto. Debe ser mayor de 3 caracteres.'),
-    Array('persona','foto_persona','file',101,'cumple tamaño maximo','max_size','SEARCH','foto_persona_max_ko','Nombre demaisado largo. debe ser menor de 15 caracteres.'),
-    Array('persona','foto_persona','file',102,'formato','format','SEARCH','foto_persona_format_ko','Formato incorrecto. Solo se admiten letras y punto (.)'),
+    Array('persona','foto_persona','file',88,'cumple tamaño minimo','min_size','SEARCH','foto_persona_min_size_ko','Nombre demasiado corto. Debe ser mayor de 3 caracteres.'),
+    Array('persona','foto_persona','file',89,'cumple tamaño maximo','max_size','SEARCH','foto_persona_max_ko','Nombre demaisado largo. debe ser menor de 15 caracteres.'),
+    Array('persona','foto_persona','file',90,'formato','format','SEARCH','foto_persona_format_ko','Formato incorrecto. Solo se admiten letras y punto (.)'),
 
 
     //nuevo_foto_persona --> ADD
-    Array('persona','foto_persona','file',103,'existe fichero en foto_persona','exist_file','ADD','foto_persona_exist_file_ko','No existe foto. Debe subir una foto en .jpg'),
-    Array('persona','foto_persona','file',104,'foto persona formato incorrecto','format_name_file','ADD','foto_persona_format_name_file_ko','nombre de foto incorrecto. Se deben usar letras son acentos y solo se permiten puntos (.)'),
-    Array('persona','foto_persona','file',105,'foto persona tamaño excesivo','max_size_file','ADD','foto_persona_max_size_file_ko','Tamaño fichero foto excesivo. Deben ser menor de 2000 bytes (2MB)'),
+    Array('persona','foto_persona','file',91,'existe fichero en foto_persona','exist_file','ADD','foto_persona_exist_file_ko','No existe foto. Debe subir una foto en .jpg'),
+    Array('persona','foto_persona','file',92,'foto persona formato incorrecto','format_name_file','ADD','foto_persona_format_name_file_ko','nombre de foto incorrecto. Se deben usar letras son acentos y solo se permiten puntos (.)'),
+    Array('persona','foto_persona','file',93,'foto persona tamaño excesivo','max_size_file','ADD','foto_persona_max_size_file_ko','Tamaño fichero foto excesivo. Deben ser menor de 2000 bytes (2MB)'),
     //nuevo_foto_persona --> EDIT
-    Array('persona','foto_persona','file',106,'existe fichero en foto_persona','exist_file','EDIT','foto_persona_exist_file_ko','No existe foto. Debe subir una foto en .jpg'),
-    Array('persona','foto_persona','file',107,'foto persona formato incorrecto','format_name_file','EDIT','foto_persona_format_name_file_ko','nombre de foto incorrecto. Se deben usar letras son acentos y solo se permiten puntos (.)'),
-    Array('persona','foto_persona','file',108,'foto persona tamaño excesivo','max_size_file','EDIT','foto_persona_max_size_file_ko','Tamaño fichero foto excesivo. Deben ser menor de 2000 bytes (2MB)'),
+    Array('persona','foto_persona','file',94,'existe fichero en foto_persona','exist_file','EDIT','foto_persona_exist_file_ko','No existe foto. Debe subir una foto en .jpg'),
+    Array('persona','foto_persona','file',95,'foto persona formato incorrecto','format_name_file','EDIT','foto_persona_format_name_file_ko','nombre de foto incorrecto. Se deben usar letras son acentos y solo se permiten puntos (.)'),
+    Array('persona','foto_persona','file',96,'foto persona tamaño excesivo','max_size_file','EDIT','foto_persona_max_size_file_ko','Tamaño fichero foto excesivo. Deben ser menor de 2000 bytes (2MB)'),
 
 );
 
@@ -214,99 +200,85 @@ Array(
 
     
     //fechaNacimiento_persona --> ADD
-    Array('persona','fechaNacimiento_persona',40,40,'ADD',{fechaNacimiento_persona:'1/11/1111'},'fechaNacimiento_persona_min_size_ko'),
-    Array('persona','fechaNacimiento_persona',41,41,'ADD',{fechaNacimiento_persona:'111/11/1111'},'fechaNacimiento_persona_max_size_ko'),
-    Array('persona','fechaNacimiento_persona',42,42,'ADD',{fechaNacimiento_persona:'1111/11/11'},'fechaNacimiento_persona_format_ko'),
-    Array('persona','fechaNacimiento_persona',43,43,'ADD',{fechaNacimiento_persona:'10/12/9999'},'fechaNacimiento_futura'),
-    Array('persona','fechaNacimiento_persona',44,44,'ADD',{fechaNacimiento_persona:'67/02/2006'},'fechaNacimiento_dia_incorrecto'),
-    Array('persona','fechaNacimiento_persona',45,45,'ADD',{fechaNacimiento_persona:'03/67/2006'},'fechaNacimiento_mes_incorrectos'),
-    Array('persona','fechaNacimiento_persona',46,46,'ADD',{fechaNacimiento_persona:'11/11/1111'},true),
+    Array('persona','fechaNacimiento_persona',40,40,'ADD',{fechaNacimiento_persona:'1111/11/11'},'fechaNacimiento_persona_format_ko'),
+    Array('persona','fechaNacimiento_persona',41,41,'ADD',{fechaNacimiento_persona:'67/02/2006'},'fechaNacimiento_dia_incorrecto'),
+    Array('persona','fechaNacimiento_persona',42,42,'ADD',{fechaNacimiento_persona:'03/67/2006'},'fechaNacimiento_mes_incorrectos'),
+    Array('persona','fechaNacimiento_persona',43,43,'ADD',{fechaNacimiento_persona:'99/99/9999'},'fechaNacimiento_futura'),
+    Array('persona','fechaNacimiento_persona',44,44,'ADD',{fechaNacimiento_persona:'11/11/1111'},true),
     //fechaNacimiento_persona --> EDIT
-    Array('persona','fechaNacimiento_persona',47,47,'EDIT',{fechaNacimiento_persona:'1/11/1111'},'fechaNacimiento_persona_min_size_ko'),
-    Array('persona','fechaNacimiento_persona',48,48,'EDIT',{fechaNacimiento_persona:'111/11/1111'},'fechaNacimiento_persona_max_size_ko'),
-    Array('persona','fechaNacimiento_persona',49,49,'EDIT',{fechaNacimiento_persona:'1111/11/11'},'fechaNacimiento_persona_format_ko'),
-    Array('persona','fechaNacimiento_persona',50,50,'EDIT',{fechaNacimiento_persona:'10/12/9999'},'fechaNacimiento_futura'),
-    Array('persona','fechaNacimiento_persona',51,51,'EDIT',{fechaNacimiento_persona:'67/02/2006'},'fechaNacimiento_dia_incorrecto'),
-    Array('persona','fechaNacimiento_persona',52,52,'EDIT',{fechaNacimiento_persona:'03/67/2006'},'fechaNacimiento_mes_incorrectos'),
-    Array('persona','fechaNacimiento_persona',53,53,'EDIT',{fechaNacimiento_persona:'11/11/1111'},true),
+    Array('persona','fechaNacimiento_persona',45,45,'EDIT',{fechaNacimiento_persona:'1111/11/11'},'fechaNacimiento_persona_format_ko'),
+    Array('persona','fechaNacimiento_persona',46,46,'EDIT',{fechaNacimiento_persona:'67/02/2006'},'fechaNacimiento_dia_incorrecto'),
+    Array('persona','fechaNacimiento_persona',47,47,'EDIT',{fechaNacimiento_persona:'03/67/2006'},'fechaNacimiento_mes_incorrectos'),
+    Array('persona','fechaNacimiento_persona',48,48,'EDIT',{fechaNacimiento_persona:'99/99/9999'},'fechaNacimiento_futura'),
+    Array('persona','fechaNacimiento_persona',49,49,'EDIT',{fechaNacimiento_persona:'11/11/1111'},true),
     //fechaNacimiento_persona --> SEARCH
-    Array('persona','fechaNacimiento_persona',54,54,'SEARCH',{fechaNacimiento_persona:'1/11/1111'},'fechaNacimiento_persona_min_size_ko'),
-    Array('persona','fechaNacimiento_persona',55,55,'SEARCH',{fechaNacimiento_persona:'111/11/1111'},'fechaNacimiento_persona_max_size_ko'),
-    Array('persona','fechaNacimiento_persona',56,56,'SEARCH',{fechaNacimiento_persona:'1111/11/11'},'fechaNacimiento_persona_format_ko'),
-    Array('persona','fechaNacimiento_persona',57,57,'SEARCH',{fechaNacimiento_persona:'10/12/9999'},'fechaNacimiento_futura'),
-    Array('persona','fechaNacimiento_persona',58,58,'SEARCH',{fechaNacimiento_persona:'67/02/2006'},'fechaNacimiento_dia_incorrecto'),
-    Array('persona','fechaNacimiento_persona',59,59,'SEARCH',{fechaNacimiento_persona:'03/67/2006'},'fechaNacimiento_mes_incorrectos'),
-    Array('persona','fechaNacimiento_persona',60,60,'SEARCH',{fechaNacimiento_persona:'11/11/1111'},true),
+    Array('persona','fechaNacimiento_persona',50,50,'SEARCH',{fechaNacimiento_persona:'1111/11/11'},'fechaNacimiento_persona_format_ko'),
+    Array('persona','fechaNacimiento_persona',51,51,'SEARCH',{fechaNacimiento_persona:'67/02/2006'},'fechaNacimiento_dia_incorrecto'),
+    Array('persona','fechaNacimiento_persona',52,52,'SEARCH',{fechaNacimiento_persona:'03/67/2006'},'fechaNacimiento_mes_incorrectos'),
+    Array('persona','fechaNacimiento_persona',53,53,'SEARCH',{fechaNacimiento_persona:'99/99/9999'},'fechaNacimiento_futura'),
+    Array('persona','fechaNacimiento_persona',54,54,'SEARCH',{fechaNacimiento_persona:'11/11/1111'},true),
 
 
     //direccion_persona --> ADD
-    Array('persona','direccion_persona',61,61,'ADD',{direccion_persona:'a2b4c6d8'},'direccion_persona_min_size_ko'),
-    Array('persona','direccion_persona',62,62,'ADD',{direccion_persona:'a'.repeat(201)},'direccion_persona_max_size_ko'),
-    Array('persona','direccion_persona',63,63,'ADD',{direccion_persona:'C:67 _l'},'direccion_persona_format_ko'),
-    Array('persona','direccion_persona',64,64,'ADD',{direccion_persona:'C/Solaina 67'},true),
+    Array('persona','direccion_persona',55,55,'ADD',{direccion_persona:'a2b4c6d8'},'direccion_persona_min_size_ko'),
+    Array('persona','direccion_persona',56,56,'ADD',{direccion_persona:'a'.repeat(201)},'direccion_persona_max_size_ko'),
+    Array('persona','direccion_persona',57,57,'ADD',{direccion_persona:'C:67 _l'},'direccion_persona_format_ko'),
+    Array('persona','direccion_persona',58,58,'ADD',{direccion_persona:'C/Solaina 67'},true),
     //direccion_persona --> EDIT
-    Array('persona','direccion_persona',65,65,'EDIT',{direccion_persona:'a2b4c6d8'},'direccion_persona_min_size_ko'),
-    Array('persona','direccion_persona',66,66,'EDIT',{direccion_persona:'a'.repeat(201)},'direccion_persona_max_size_ko'),
-    Array('persona','direccion_persona',67,67,'EDIT',{direccion_persona:'C:67 _l'},'direccion_persona_format_ko'),
-    Array('persona','direccion_persona',68,68,'EDIT',{direccion_persona:'C/Solaina 67'},true),
+    Array('persona','direccion_persona',59,59,'EDIT',{direccion_persona:'a2b4c6d8'},'direccion_persona_min_size_ko'),
+    Array('persona','direccion_persona',60,60,'EDIT',{direccion_persona:'a'.repeat(201)},'direccion_persona_max_size_ko'),
+    Array('persona','direccion_persona',61,61,'EDIT',{direccion_persona:'C:67 _l'},'direccion_persona_format_ko'),
+    Array('persona','direccion_persona',62,62,'EDIT',{direccion_persona:'C/Solaina 67'},true),
     //direccion_persona --> SEARCH
-    Array('persona','direccion_persona',69,69,'SEARCH',{direccion_persona:'a2b4c6d8'},'direccion_persona_min_size_ko'),
-    Array('persona','direccion_persona',70,70,'SEARCH',{direccion_persona:'a'.repeat(201)},'direccion_persona_max_size_ko'),
-    Array('persona','direccion_persona',71,71,'SEARCH',{direccion_persona:'C:67 _l'},'direccion_persona_format_ko'),
-    Array('persona','direccion_persona',72,72,'SEARCH',{direccion_persona:'C/Solaina 67'},true),
+    Array('persona','direccion_persona',63,63,'SEARCH',{direccion_persona:'a2b4c6d8'},'direccion_persona_min_size_ko'),
+    Array('persona','direccion_persona',64,64,'SEARCH',{direccion_persona:'a'.repeat(201)},'direccion_persona_max_size_ko'),
+    Array('persona','direccion_persona',65,65,'SEARCH',{direccion_persona:'C:67 _l'},'direccion_persona_format_ko'),
+    Array('persona','direccion_persona',66,66,'SEARCH',{direccion_persona:'C/Solaina 67'},true),
 
 
     //telefono_persona --> ADD
-    Array('persona','telefono_persona',73,73,'ADD',{telefono_persona:'1234'},'telefono_persona_min_size_ko'),
-    Array('persona','telefono_persona',74,74,'ADD',{telefono_persona:'9'.repeat(10)},'telefono_persona_max_size_ko'),
-    Array('persona','telefono_persona',75,75,'ADD',{telefono_persona:'123-56-89'},'telefono_persona_format_ko'),
-    Array('persona','direccion_persona',76,76,'ADD',{telefono_persona:'123456789'},true),
+    Array('persona','telefono_persona',67,67,'ADD',{telefono_persona:'1234'},'telefono_persona_min_size_ko'),
+    Array('persona','telefono_persona',68,68,'ADD',{telefono_persona:'9'.repeat(10)},'telefono_persona_max_size_ko'),
+    Array('persona','telefono_persona',69,69,'ADD',{telefono_persona:'123-56-89'},'telefono_persona_format_ko'),
+    Array('persona','direccion_persona',70,70,'ADD',{telefono_persona:'123456789'},true),
     //telefono_persona --> EDIT
-    Array('persona','telefono_persona',77,77,'EDIT',{telefono_persona:'1234'},'telefono_persona_min_size_ko'),
-    Array('persona','telefono_persona',78,78,'EDIT',{telefono_persona:'9'.repeat(201)},'telefono_persona_max_size_ko'),
-    Array('persona','telefono_persona',79,79,'EDIT',{telefono_persona:'123-56-89'},'telefono_persona_format_ko'),
-    Array('persona','telefono_persona',80,80,'EDIT',{telefono_persona:'123456789'},true),
+    Array('persona','telefono_persona',71,71,'EDIT',{telefono_persona:'1234'},'telefono_persona_min_size_ko'),
+    Array('persona','telefono_persona',72,72,'EDIT',{telefono_persona:'9'.repeat(201)},'telefono_persona_max_size_ko'),
+    Array('persona','telefono_persona',73,73,'EDIT',{telefono_persona:'123-56-89'},'telefono_persona_format_ko'),
+    Array('persona','telefono_persona',74,74,'EDIT',{telefono_persona:'123456789'},true),
     //telefono_persona --> SEARCH
-    Array('persona','telefono_persona',81,81,'SEARCH',{telefono_persona:'1234'},'telefono_persona_min_size_ko'),
-    Array('persona','telefono_persona',82,82,'SEARCH',{telefono_persona:'9'.repeat(201)},'telefono_persona_max_size_ko'),
-    Array('persona','telefono_persona',83,83,'SEARCH',{telefono_persona:'123-56-89'},'telefono_persona_format_ko'),
-    Array('persona','telefono_persona',84,84,'SEARCH',{telefono_persona:'123456789'},true),
+    Array('persona','telefono_persona',75,75,'SEARCH',{telefono_persona:'1234'},'telefono_persona_min_size_ko'),
+    Array('persona','telefono_persona',76,76,'SEARCH',{telefono_persona:'9'.repeat(201)},'telefono_persona_max_size_ko'),
+    Array('persona','telefono_persona',77,77,'SEARCH',{telefono_persona:'123-56-89'},'telefono_persona_format_ko'),
+    Array('persona','telefono_persona',78,78,'SEARCH',{telefono_persona:'123456789'},true),
 
 
     //email_persona --> ADD
-    Array('persona','email_persona',85,85,'ADD',{email_persona:'a'.repeat(46)},'email_persona_max_size_ko'),
-    Array('persona','email_persona',86,86,'ADD',{email_persona:'usuariogmailes.'},'email_persona_format_ko'),
-    Array('persona','emailn_persona',87,87,'ADD',{email_persona:'usuario67@gmail.com'},true),
+    Array('persona','email_persona',79,79,'ADD',{email_persona:'a'.repeat(46)},'email_persona_max_size_ko'),
+    Array('persona','email_persona',80,80,'ADD',{email_persona:'usuariogmailes.'},'email_persona_format_ko'),
+    Array('persona','emailn_persona',81,81,'ADD',{email_persona:'usuario67@gmail.com'},true),
     //email_persona --> EDIT
-    Array('persona','email_persona',88,88,'EDIT',{email_persona:'a'.repeat(46)},'email_persona_max_size_ko'),
-    Array('persona','email_persona',89,89,'EDIT',{email_persona:'usuariogmailes.'},'email_persona_format_ko'),
-    Array('persona','email_persona',90,90,'EDIT',{email_persona:'usuario67@gmail.com'},true),
+    Array('persona','email_persona',82,82,'EDIT',{email_persona:'a'.repeat(46)},'email_persona_max_size_ko'),
+    Array('persona','email_persona',83,83,'EDIT',{email_persona:'usuariogmailes.'},'email_persona_format_ko'),
+    Array('persona','email_persona',84,84,'EDIT',{email_persona:'usuario67@gmail.com'},true),
     //email_persona --> SEARCH
-    Array('persona','email_persona',91,91,'SEARCH',{email_persona:'a'.repeat(46)},'email_persona_max_size_ko'),
-    Array('persona','email_persona',92,92,'SEARCH',{email_persona:'usuariogmailes.'},'email_persona_format_ko'),
-    Array('persona','email_persona',93,93,'SEARCH',{email_persona:'usuario67@gmail.com'},true),
+    Array('persona','email_persona',85,85,'SEARCH',{email_persona:'a'.repeat(46)},'email_persona_max_size_ko'),
+    Array('persona','email_persona',86,86,'SEARCH',{email_persona:'usuariogmailes.'},'email_persona_format_ko'),
+    Array('persona','email_persona',87,87,'SEARCH',{email_persona:'usuario67@gmail.com'},true),
 
 
-    //foto_persona --> ADD
-    Array('persona','foto_persona',94,94,'ADD',{foto_persona:'aa'},'foto_persona_min_size_file_ko'),
-    Array('persona','foto_persona',95,95,'ADD',{foto_persona:'a'.repeat(15)},'foto_persona_max_size_file_ko'),
-    Array('persona','foto_persona',96,96,'ADD',{foto_persona:'a:3'},'foto_persona_format_file_ko'),
-    //foto_persona --> EDIT
-    Array('persona','foto_persona',97,97,'EDIT',{foto_persona:'aa'},'foto_persona_min_size_file_ko'),
-    Array('persona','foto_persona',98,98,'EDIT',{foto_persona:'a'.repeat(15)},'foto_persona_max_size_file_ko'),
-    Array('persona','foto_persona',99,99,'EDIT',{foto_persona:'a:3'},'foto_persona_format_file_ko'),
     //foto_persona --> SEARCH
-    Array('persona','foto_persona',100,100,'SEARCH',{foto_persona:'aa'},'foto_persona_min_size_file_ko'),
-    Array('persona','foto_persona',101,101,'SEARCH',{foto_persona:'a'.repeat(15)},'foto_persona_max_size_file_ko'),
-    Array('persona','foto_persona',102,102,'SEARCH',{foto_persona:'a:3'},'foto_persona_format_file_ko'),
+    Array('persona','foto_persona',88,88,'SEARCH',{foto_persona:'aa'},'foto_persona_min_size_file_ko'),
+    Array('persona','foto_persona',89,89,'SEARCH',{foto_persona:'a'.repeat(15)},'foto_persona_max_size_file_ko'),
+    Array('persona','foto_persona',90,90,'SEARCH',{foto_persona:'a:3'},'foto_persona_format_file_ko'),
 
 
     //nuevo_foto_persona --> ADD
-    Array('persona','foto_persona',103,103,'ADD',{},'foto_persona_not_exist_file_ko'),
-    Array('persona','foto_persona',104,104,'ADD',{foto_persona:{format_name_file:'nombrejpg00.jpg',type_file:'image/jpeg',max_size_file:200}},'foto_persona_format_name_file_ko'),
-    Array('persona','foto_persona',105,105,'ADD',{foto_persona:{format_name_file:'nombrejpg.jpg',type_file:'image/jpeg',max_size_file:2000000000}},'foto_persona_max_size_file_ko'),
+    Array('persona','foto_persona',91,91,'ADD',{},'foto_persona_not_exist_file_ko'),
+    Array('persona','foto_persona',92,92,'ADD',{foto_persona:{format_name_file:'nombrejpg00.jpg',type_file:'image/jpeg',max_size_file:200}},'foto_persona_format_name_file_ko'),
+    Array('persona','foto_persona',93,93,'ADD',{foto_persona:{format_name_file:'nombrejpg.jpg',type_file:'image/jpeg',max_size_file:2000000000}},'foto_persona_max_size_file_ko'),
     //nuevo_foto_persona --> EDIT
-    Array('persona','foto_persona',106,106,'EDIT',{},'foto_persona_not_exist_file_ko'),
-    Array('persona','foto_persona',107,107,'EDIT',{foto_persona:{format_name_file:'nombrejpg00.jpg',type_file:'image/jpeg',max_size_file:200}},'foto_persona_format_name_file_ko'),
-    Array('persona','foto_persona',108,108,'EDIT',{foto_persona:{format_name_file:'nombrejpg.jpg',type_file:'image/jpeg',max_size_file:2000000000}},'foto_persona_max_size_file_ko'),
+    Array('persona','foto_persona',94,94,'EDIT',{},'foto_persona_not_exist_file_ko'),
+    Array('persona','foto_persona',95,95,'EDIT',{foto_persona:{format_name_file:'nombrejpg00.jpg',type_file:'image/jpeg',max_size_file:200}},'foto_persona_format_name_file_ko'),
+    Array('persona','foto_persona',96,96,'EDIT',{foto_persona:{format_name_file:'nombrejpg.jpg',type_file:'image/jpeg',max_size_file:2000000000}},'foto_persona_max_size_file_ko'),
 );
