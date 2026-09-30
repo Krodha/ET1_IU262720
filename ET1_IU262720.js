@@ -7,5 +7,5 @@ let datosgenerales =
     Participante2:
         ["DizParrondoRoberto", "Entrega", 3],
     Participante3:
-        ["ElsdekyMahmoudKhaled", "Entrega", 3]
+        ["ElsdekyMahmoud", "Entrega", 3]
 }
